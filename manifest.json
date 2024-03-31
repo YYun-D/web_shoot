@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "거미줄 발사",
-    "version": "0.1",
+    "version": "0.2",
     "description": "현재 페이지에 거미줄 발사하는 게임",
     "action": {
       "default_popup": "popup.html",
@@ -28,6 +28,10 @@
         "js": ["content.js"]
       }
     ],
+    "web_accessible_resources": [{
+      "resources": ["assets/*"],
+      "matches": ["<all_urls>"]
+    }],
     "background": {
       "service_worker": "background.js"
     }

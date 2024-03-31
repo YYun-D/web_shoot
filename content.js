@@ -1,6 +1,6 @@
 var webElement = document.createElement('img');
 
-webElement.src = 'https://drive.google.com/uc?id=1gaez46ydJtsoPWvO_7dXMkQaaP214LWA';
+webElement.src = chrome.runtime.getURL("assets/spider-man-arm.png");
 webElement.style.width = '200px';
 webElement.style.height = '200px';
 webElement.style.position = 'fixed';
@@ -18,10 +18,10 @@ isCrashing = false;
 
 webElement.addEventListener('click', (event) => {
   if (isCrashing) {
-    const audio = new Audio('https://docs.google.com/uc?export=open&id=1MCTrUrEisVQY_MS5z7phYJniQyRBZcxs');
+    const audio = new Audio(chrome.runtime.getURL("assets/web-sound.mp3"));
     audio.play();
     const CrackImage = document.createElement('img');
-    CrackImage.src = 'https://drive.google.com/uc?id=1aQUQc6igAf2thu_SoxQDusQs5bK5jFbj';
+    CrackImage.src = chrome.runtime.getURL("assets/web.png");
     CrackImage.style.position = 'fixed';
     CrackImage.style.zIndex = '10000';
     CrackImage.style.width = '150px';
